@@ -44,7 +44,8 @@ module.exports = (_, argv) => ({
       name: "amazon_aws",
       filename: "remoteEntry.js",
       remotes: {
-        "react_app1":"react_app1@http://localhost:8080/remoteEntry.js"
+        //"react_app1":"react_app1@http://localhost:8080/remoteEntry.js"
+        "react_app1":"react_app1@https://reactmicroapp1.netlify.app/remoteEntry.js"
       },
       exposes: {},
       shared: {
