@@ -8,14 +8,18 @@ import {BrowserRouter , Route,  Routes,  Switch } from "react-router-dom";
 
 const App = () =>
 {
-  return(<BrowserRouter>
-    <Routes>
-    <Route exact path ="/student2" element={<StudentApp2 />}>
-    </Route>
-    <Route exact path="/student3" element={<StudentApp3 />}>
-    </Route>
-    </Routes>
-  </BrowserRouter>)
+  return(
+    <StudentApp2/>
+  // <BrowserRouter>
+  //   <Routes>
+  //   <Route exact path ="/student2" element={<StudentApp2 />}>
+  //   </Route>
+  //   <Route exact path="/student3" element={<StudentApp3 />}>
+  //   </Route>
+  //   </Routes>
+  // </BrowserRouter>
+  )
+  
 };
 
 ReactDOM.render(<App />, document.getElementById("app"));
