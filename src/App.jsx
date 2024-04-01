@@ -1,15 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import StudentApp2 from "./StudentApp2.jsx";
-import StudentApp3 from "./StudentApp3.jsx";
+import StudentApp1 from "react_app1/StudentApp1";
+
 import {BrowserRouter , Route,  Routes,  Switch } from "react-router-dom";
 
 
 const App = () =>
 {
   return(
-    <StudentApp2/>
+    <StudentApp1/>
   // <BrowserRouter>
   //   <Routes>
   //   <Route exact path ="/student2" element={<StudentApp2 />}>
