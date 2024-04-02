@@ -4,7 +4,7 @@ const Dotenv = require('dotenv-webpack');
 const deps = require("./package.json").dependencies;
 module.exports = (_, argv) => ({
   output: {
-    publicPath: "https://reactmicroservicepp2.netlify.app/",
+    //publicPath: "https://reactmicroservicepp2.netlify.app/",
   },
 
   resolve: {
@@ -41,7 +41,7 @@ module.exports = (_, argv) => ({
 
   plugins: [
     new ModuleFederationPlugin({
-      name: "amazon_aws",
+      name: "react_app2",
       filename: "remoteEntry.js",
       remotes: {
         //"react_app1":"react_app1@http://localhost:8080/remoteEntry.js"
